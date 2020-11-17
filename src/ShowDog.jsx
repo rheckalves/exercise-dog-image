@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 class ShowDog extends Component {
     render() {
+        const { message: dog } = this.props.dog;
         return (
-            <img src={this.props.dog} alt="dog" />
+            <img src={dog} alt="dog" />
         )
     }
 }
